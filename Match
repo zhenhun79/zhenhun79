@@ -1,0 +1,40 @@
+Filtered List: [1, 2, 3, 1, 2, 3]
+Mapped List: [2, 4, 6, 8, 10, 2, 4, 6, 8, 10]
+FlatMapped List: [H, e, l, l, o, W, o, r, l, d]
+Distinct List: [1, 2, 3, 4, 5]
+Sorted List: [1, 1, 2, 2, 3, 3, 4, 4, 5, 5]
+Limited List: [1, 2, 3]
+Skipped List: [4, 5, 1, 2, 3, 4, 5]
+Peeking element: 1
+Peeking element: 2
+Peeking element: 3
+Peeking element: 4
+Peeking element: 5
+Peeking element: 1
+Peeking element: 2
+Peeking element: 3
+Peeking element: 4
+Peeking element: 5
+Taken List: [1, 2, 3]
+Dropped List: [4, 5, 1, 2, 3, 4, 5]
+Collected List: [1, 2, 3, 4, 5, 1, 2, 3, 4, 5]
+1
+2
+3
+4
+5
+1
+2
+3
+4
+5
+Sum: 30
+Max: 5
+Min: 1
+Array: [1, 2, 3, 4, 5, 1, 2, 3, 4, 5]
+Count: 10
+First: 1
+Any: 1
+Any Match: true
+All Match: false
+None Match: true
