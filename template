@@ -1,0 +1,17 @@
+
+#include<iostream>
+using namespace std;
+#define N 20
+​
+template<class Ta, class Tb>
+bool is_sorted(Ta& a, Tb& n)
+{
+    for(int i = 1;i < n; i++)
+    {
+        if(a[i] < a[i-1])
+            return false;
+    }
+    return true;
+}
+​
+void test()
