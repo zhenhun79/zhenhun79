@@ -1,0 +1,11 @@
+// Sample implementation as doGetUser 
+ 	protected User doGetUserByMobileId(String inMobileId) throws UserProfileResourceException { 
+ 		return doGetUser(inMobileId); 
+	} 
+ 
+	protected Iterator doGetAllUsers(String role) throws UserProfileResourceException { 
+ 
+		System.out.println("SampleUserManagerImpl.doGetAllUsers - This operation is not implemented !");  
+		ArrayList users = new ArrayList(); 
+		return users.iterator(); 
+	} 
