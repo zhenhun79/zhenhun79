@@ -1,0 +1,31 @@
+
+struct zhiWu {
+    int type;   // >=1
+    int frameIndex;
+};
+struct zhiWu  map[3][9];
+int sunshine;
+int sunshineTable[ZHI_WU_COUT] = { 100, 50 };
+ 
+void gameInit() {
+    loadimage(&imgBg, "res/bg.jpg");
+    loadimage(&imgBar, "res/bar.png");
+    sunshine = 150;
+    curZhiWu = 0;
+    memset(imgZhiWu, 0, sizeof(imgZhiWu));
+    memset(map, 0, sizeof(map));
+ 
+    char name[64];
+    for (int i = 0; i < ZHI_WU_COUT; i++) {
+        sprintf_s(name, sizeof(name), "res/Cards/card_%d.png", i + 1);
+        loadimage(&imgCards[i], name);
+ 
+        for (int j = 0; j < 20; j++) {
+            sprintf_s(name, sizeof(name), "res/zhiwu/%d/%d.png", i, j + 1);
+            imgZhiWu[i][j] = new IMAGE;
+            loadimage(imgZhiWu[i][j], name);
+            if (imgZhiWu[i][j]->getwidth() == 0) {
+                delete imgZhiWu[i][j];
+                imgZhiWu[i][j] = NULL;
+            }
+        }
