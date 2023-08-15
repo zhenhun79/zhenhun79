@@ -1,0 +1,29 @@
+bool eraser(const K& key)
+		{
+			size_t hashi = key % _tables.size();
+			Node* cur = _tables[hashi];
+			Node* prev = nullptr;
+			while (cur)
+			{
+				if (cur->_kv.first == key)
+				{
+					if (prev == nullptr)
+					{
+						Node* next = cur->_next;
+						_tables[hashi] = next;
+					}
+					else
+					{
+						prev->_next = cur->_next;
+					}
+					delete cur;
+					return true;
+				}
+				else
+				{
+					prev = cur;
+					cur = cur->_next;
+				}
+			}
+			return false;
+		}
