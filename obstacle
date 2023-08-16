@@ -1,0 +1,29 @@
+#include <vector>
+using namespace std;
+#define OBSTACLE_COUNT 10
+typedef  enum {
+
+    TORTOISE,//0
+    LION,//1
+    OBSTACLE_TYPE_COUNT//2
+    
+}obstacle_type;
+
+//IMAGE obstacleImgs[3][12];
+vector<vector<IMAGE>>  obstacleImgs;
+
+
+typedef struct obstacle
+{
+obstacle_type type;
+   int x,y;	
+   int speed;
+   int power;
+   bool exist; 
+   int imgIndex;
+   
+}obstacle_t;
+
+obstacle_t obstacles[ OBSTACLE_COUNT];
+
+
