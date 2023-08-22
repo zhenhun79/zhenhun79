@@ -1,0 +1,31 @@
+{
+    // Place your snippets for javascript here. Each snippet is defined under a snippet name and has a prefix, body and 
+    // description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+    // $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. Placeholders with the 
+    // same ids are connected.
+    // Example:
+    "Print to test": {
+        "prefix": ["test"],
+        "body": [
+            "$LINE_COMMENT-- test code snippet",
+            "console.log(${1|a,b,c|});",
+            "let test=$1"
+        ],
+        "description": "Log output to test"
+    },
+    "Print to console": {
+        "prefix": ["console.log", "console", "log"],
+        "body": [
+            "console.log();",
+            "$2"
+        ],
+        "description": "Log output to console"
+    },
+    "mock str array": {
+        "prefix": ["arrstr"],
+        "body": [
+            "let ${1:arrstr}=[\"name\",\"age\",\"sex\",\"hobby\"];",
+            "$2"
+        ],
+        "description": "mock a string array"
+    },
